@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     background-color: transparent;
-    min-height: 100vh;
+    height: 300vh;
     width: 100vw;
 }
 
@@ -17,7 +17,8 @@ span {
 }
 
 .content-box-1,
-.content-box-2 {
+.content-box-2,
+.content-box-3 {
     background-color: var(--background-color);
     opacity: 0.8;
     width: 100vw;
@@ -27,11 +28,15 @@ span {
 }
 
 .content-box-1 {
-    margin-top: 50vh;
+    margin-top: 70vh;
 }
 
 .content-box-2 {
     margin-top: 30vh;
+}
+
+.content-box-3 {
+    margin-top: 50vh;
 }
 
 
