@@ -1,0 +1,52 @@
+/* global styles*/
+
+:root {
+    --background-color: #002D62;
+    --font-color: #F0F8FF;
+    --accent-color: #6F00FF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.75rem;
+    letter-spacing: 5px;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+    animation: fadeInBottom 1s forwards ease;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: -2px;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    animation: fadeInBottom 1.5s forwards ease;
+}
+
+/* Animations */
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
