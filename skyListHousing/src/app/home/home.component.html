@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>skyHousing</title>
 </head>
 
@@ -12,6 +11,26 @@
     <div class="wrapper">
         <h1>SkyHousing</h1>
         <h2>Your next home is just over the horizon</h2>
+        <span class="material-icons">arrow_downward</span>
+        <div *ngIf="isVisible" [@fadeIn] class="content-box-1">
+            <h1>We Are skyHousing</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, itaque! Rem dolorum libero odio
+                assumenda voluptatum esse explicabo delectus veniam soluta nesciunt, pariatur repellat temporibus
+                impedit dicta voluptatem placeat molestiae?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officia earum, dolorum molestias magnam
+                praesentium quod dolores, fuga sed pariatur iste, reiciendis consequatur molestiae corrupti eaque id
+                architecto ratione! Eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque
+                obcaecati, minima quaerat ducimus facere consectetur necessitatibus molestias maiores fugiat voluptates
+                ad nemo illum nobis iusto at porro, tempore ex.</p>
+        </div>
+        <div *ngIf="isVisible" [@fadeIn] class="content-box-2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consectetur modi pariatur provident
+                rem quod officia explicabo sapiente, architecto omnis quis eum officiis sed. Enim iusto ad ipsa quasi
+                aliquam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur cumque aliquam inventore
+                molestiae unde harum ratione fugiat saepe? Deserunt molestiae repellendus recusandae laborum nostrum
+                omnis, qui accusamus? Officia, est!</p>
+        </div>
     </div>
 
 </body>

@@ -1,8 +1,10 @@
 .navbar {
+    position: sticky;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #72A0C1;
+    background-color: var(--background-color);
     opacity: 0.6;
     padding: 15px 20px;
     color: inherit;
@@ -45,9 +47,12 @@
     color: inherit;
     font-size: 1rem;
     transition: color 0.3s;
+    transition: all 0.7s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--accent-color);
+    font-size: 1.25rem;
+    letter-spacing: 5px;
 }
