@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -17,11 +18,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
+    overflow-y: scroll;
     color: var(--font-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    height: 100%;
 }
 
 h1 {
@@ -41,6 +44,13 @@ h2 {
     font-weight: 400;
     margin-bottom: 1.25rem;
     animation: fadeInBottom 1.5s forwards ease;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 /* Animations */

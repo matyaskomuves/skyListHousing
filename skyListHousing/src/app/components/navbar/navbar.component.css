@@ -53,6 +53,8 @@
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--accent-color);
-    font-size: 1.25rem;
-    letter-spacing: 5px;
+    font-size: 1.15rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 10px;
 }

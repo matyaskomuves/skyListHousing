@@ -12,7 +12,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('in', style({ opacity: 1 })),
       transition('void => *', [
         style({ opacity: 0 }),
-        animate('1000ms ease-in')
+        animate(1000)
       ])
     ])
   ]
@@ -27,12 +27,11 @@ export class HomeComponent {
 
   checkScroll() {
     const scrollPosition = window.scrollY;
+
     if (scrollPosition > 100) {
       this.isVisible = true;
     } else {
       this.isVisible = false;
     }
   }
-  title = 'skyListHousing';
-
 }
