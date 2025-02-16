@@ -1,1 +1,11 @@
-<p>house-list works!</p>
+<h1>Current Offers</h1>
+<h2>Browse through our catalog</h2>
+<div class="listings-container">
+    <div *ngFor="let house of houses" class="listing-card">
+        <img [src]="house.image" alt="house">
+        <h3>{{house.name}}</h3>
+        <h4>{{house.price | currency}}</h4>
+        <p>{{house.description}}</p>
+
+    </div>
+</div>

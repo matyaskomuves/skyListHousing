@@ -12,7 +12,7 @@
         <h1>skyHousing</h1>
         <h2>Your next home is just over the horizon</h2>
         <span class="material-icons">arrow_downward</span>
-        <div *ngIf="isVisible" [@fadeIn] class="content-box-1">
+        <div class="content-box-1" appIntersectionObserver>
             <h1>We Are skyHousing</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, itaque! Rem dolorum libero odio
                 assumenda voluptatum esse explicabo delectus veniam soluta nesciunt, pariatur repellat temporibus
@@ -23,7 +23,7 @@
                 obcaecati, minima quaerat ducimus facere consectetur necessitatibus molestias maiores fugiat voluptates
                 ad nemo illum nobis iusto at porro, tempore ex.</p>
         </div>
-        <div *ngIf="isVisible" [@fadeIn] class="content-box-2">
+        <div class="content-box-2" appIntersectionObserver>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consectetur modi pariatur provident
                 rem quod officia explicabo sapiente, architecto omnis quis eum officiis sed. Enim iusto ad ipsa quasi
                 aliquam.</p>
@@ -31,7 +31,7 @@
                 molestiae unde harum ratione fugiat saepe? Deserunt molestiae repellendus recusandae laborum nostrum
                 omnis, qui accusamus? Officia, est!</p>
         </div>
-        <div *ngIf="isVisible" [@fadeIn] class="content-box-3">
+        <div class="content-box-3" appIntersectionObserver>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consectetur modi pariatur provident
                 rem quod officia explicabo sapiente, architecto omnis quis eum officiis sed. Enim iusto ad ipsa quasi
                 aliquam.</p>

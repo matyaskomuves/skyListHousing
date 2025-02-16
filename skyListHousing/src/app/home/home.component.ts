@@ -7,31 +7,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  animations: [
-    trigger('fadeIn', [
-      state('in', style({ opacity: 1 })),
-      transition('void => *', [
-        style({ opacity: 0 }),
-        animate(1500)
-      ])
-    ])
-  ]
+
 })
 export class HomeComponent {
-  @HostListener('document:scroll', [])
-  onWindowScroll() {
-    this.checkScroll();
-  }
 
-  isVisible = false;
-
-  checkScroll() {
-    const scrollPosition = window.scrollY || window.innerHeight;
-
-    if (scrollPosition > 70) {
-      this.isVisible = true;
-    } else {
-      this.isVisible = false;
-    }
-  }
 }
