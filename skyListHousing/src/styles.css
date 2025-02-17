@@ -34,7 +34,7 @@ h1 {
     font-weight: 100;
     margin-top: 0 !important;
     margin-bottom: 1.25rem;
-    animation: fadeInBottom 1s forwards ease;
+    animation: fadeInTop 1s forwards ease;
 }
 
 h2 {
@@ -43,7 +43,7 @@ h2 {
     letter-spacing: -2px;
     font-weight: 200;
     margin-bottom: 1.25rem;
-    animation: fadeInBottom 1.5s forwards ease;
+    animation: fadeInTop 1.5s forwards ease;
 }
 
 p {
