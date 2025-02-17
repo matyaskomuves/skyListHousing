@@ -60,7 +60,7 @@ p {
     padding: 20px;
     margin-bottom: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeInBottom 1s forwards ease;
+    animation: fadeInTop 1.5s forwards ease;
     transition: all 0.3s ease;
 
     &:hover {
@@ -92,14 +92,16 @@ p {
 
 /* Animations */
 
-@keyframes fadeInBottom {
+@keyframes fadeInTop {
     0% {
         opacity: 0;
+        filter: blur(15px);
         transform: translateY(-100%);
     }
 
     100% {
         opacity: 1;
+        filter: blur(0);
         transform: translateY(0);
     }
 }
