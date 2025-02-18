@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,7 @@ import { Component, AfterViewInit } from '@angular/core';
   styleUrl: './home.component.css',
 
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnDestroy {
 
   // private observer: IntersectionObserver;
 
@@ -36,6 +36,8 @@ export class HomeComponent implements AfterViewInit {
   // }
   private observer?: IntersectionObserver;
 
+  @ViewChildren('hiddenElement') hiddenElements!: QueryList<ElementRef>;
+
   constructor() { }
 
   ngAfterViewInit(): void {
@@ -43,8 +45,6 @@ export class HomeComponent implements AfterViewInit {
   }
 
   private initIntersectionObserver(): void {
-    const hiddenElements: NodeListOf<HTMLElement> = document.querySelectorAll('.hidden');
-
     if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
       if (this.observer) {
         this.observer.disconnect();
@@ -66,11 +66,11 @@ export class HomeComponent implements AfterViewInit {
       );
 
       setTimeout(() => {
-        hiddenElements.forEach((element) => this.observer!.observe(element));
+        this.hiddenElements.forEach((element) => this.observer!.observe(element.nativeElement));
       }, 500);
     } else {
       console.warn('IntersectionObserver not supported. Using fallback.');
-      hiddenElements.forEach((element) => element.classList.add('visible'));
+      this.hiddenElements.forEach((element) => element.nativeElement.classList.add('visible'));
     }
   }
 

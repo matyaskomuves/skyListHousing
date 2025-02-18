@@ -5,26 +5,35 @@
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" formControlName="name" required />
-                <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">Name is required.
+                <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                    <p class="muted">Name is required.</p>
                 </div>
             </div>
 
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" formControlName="email" required />
-                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">Enter a valid email
-                    adress.</div>
+                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                    <p class="muted">
+                        Enter a valid email
+                        adress.
+                    </p>
+                </div>
             </div>
 
             <div>
                 <label for="message" id="message">Type your message:</label>
                 <textarea id="message" formControlName="message" rows="5" cols="50" (resize)="null" required></textarea>
-                <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">A message of
-                    minimum 25 characters is required.</div>
+                <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                    <p class="muted">
+                        A message of
+                        minimum 25 characters is required.
+                    </p>
+                </div>
             </div>
 
             <div>
-                <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+                <button class="btn" type="submit" [disabled]="contactForm.invalid">Send Message</button>
             </div>
         </form>
     </div>

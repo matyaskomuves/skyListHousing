@@ -6,11 +6,11 @@
     margin: 0;
     padding: 0;
     background-color: transparent;
-    height: 300vh;
+    height: fit-content;
     width: 100vw;
 }
 
-span {
+span.material-icons {
     font-size: 4.5rem;
     color: inherit;
     animation: pulse 1.5s infinite forwards;
@@ -28,17 +28,24 @@ span {
     transition: opacity 1s ease-in-out;
 }
 
-.content-box-1 {
-    margin-top: 100vh;
+.leading-line-first,
+.leading-line-second,
+.leading-line-third {
+    width: 3px;
+    border-radius: 3px;
+    background-color: var(--accent-color);
 }
 
-.content-box-2 {
-    margin-top: 30vh;
+.leading-line-first {
+    height: 100vh;
 }
 
-.content-box-3 {
-    margin-top: 20vh;
+.leading-line-second,
+.leading-line-third {
+    height: 25vh;
 }
+
+/* Intersection Observer */
 
 .hidden {
     opacity: 0;
