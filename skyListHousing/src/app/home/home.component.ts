@@ -79,4 +79,13 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       this.observer.disconnect();
     }
   }
+
+  teamMembers = [
+    { id: 1, name: 'John Doe', position: 'Founder & CEO', image: 'john-doe.jpg' },
+    { id: 2, name: 'Jane Smith', position: 'Property Management', image: 'jane-doe.jpg' },
+    { id: 3, name: 'Alice Johnson', position: 'Leasing Consultant', image: 'alice-johnson.jpg' },
+    { id: 4, name: 'Bob Brown', position: 'Marketing & Public Relations', image: 'bob-brown.jpg' },
+    { id: 5, name: 'Charlie Wilson', position: 'Sales & Recruitment', image: 'charlie-wilson.jpg' },
+  ]
+
 }

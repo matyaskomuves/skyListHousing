@@ -53,6 +53,28 @@ i.pin {
     transition: opacity 1s ease-in-out;
 }
 
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.team-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.position-text {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
 .leading-line-first,
 .leading-line-second,
 .leading-line-third {
