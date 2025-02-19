@@ -84,7 +84,7 @@ p {
 
     &:hover {
         scale: 1.1;
-        border-radius: 10px;
+        border-top-left-radius: 1rem;
         cursor: pointer;
         background-color: var(--accent-color);
         opacity: 1;
@@ -98,6 +98,12 @@ p {
     border-radius: 5px;
     object-fit: cover;
     transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 15px;
+    }
 }
 
 .listing-card p {
