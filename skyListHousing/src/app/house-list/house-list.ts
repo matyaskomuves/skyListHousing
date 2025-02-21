@@ -4,4 +4,5 @@ export interface HouseList {
     name: string;
     description: string;
     price: number;
+    location: string;
 }

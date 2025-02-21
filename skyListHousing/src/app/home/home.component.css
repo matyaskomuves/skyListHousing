@@ -1,13 +1,13 @@
 a {
     text-decoration: none;
     color: inherit;
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
 
     &:hover {
-        text-transform: uppercase;
-        color: var(--accent-color);
+        opacity: 1;
         text-decoration: underline;
-        transition: all 0.3s ease;
-        transform: translateY(-2px);
+        transform: translateY(-5px);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 }
@@ -30,11 +30,6 @@ span.material-icons {
     animation: pulse 1.5s infinite forwards;
 }
 
-i.pin {
-    font-size: 3rem;
-    animation: bounce 1.5s infinite forwards;
-}
-
 .content-box-1,
 .content-box-2,
 .content-box-3 {
@@ -54,6 +49,7 @@ i.pin {
 }
 
 .team-container {
+    gap: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -71,6 +67,7 @@ i.pin {
 }
 
 .position-text {
+    text-align: center;
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
@@ -107,6 +104,7 @@ i.pin {
     opacity: 1;
 }
 
+/* Animations */
 
 @keyframes pulse {
     0% {
@@ -137,4 +135,33 @@ i.pin {
     100% {
         transform: translateY(0);
     }
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .content-box-1,
+    .content-box-2,
+    .content-box-3 {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-top: 0;
+        line-height: 1.5;
+        letter-spacing: -0.5px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .team-container {
+        gap: 5px;
+    }
+
 }

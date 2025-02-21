@@ -8,3 +8,18 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .listings-container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .listing-card {
+        width: 80%;
+        height: auto;
+    }
+}

@@ -17,7 +17,7 @@
             <h1>We Are skyHousing</h1>
             <div class="team-container">
                 <div *ngFor="let teammember of teamMembers" class="team-member-card">
-                    <img [src]="teammember.image" alt="team member">
+                    <img [src]="teammember.image" alt="team member" draggable="false">
                     <h3>{{teammember.name}}</h3>
                     <p class="position-text">{{teammember.position}}</p>
                 </div>
@@ -30,10 +30,10 @@
         <span class="leading-line-second"></span>
         <div #hiddenElement class="hidden content-box-2" appIntersectionObserver>
             <h1>All across Europe</h1>
-            <i class="material-icons pin">globe_location_pin</i>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur cumque aliquam inventore
-                molestiae unde harum ratione fugiat saepe? Deserunt molestiae repellendus recusandae laborum nostrum
-                omnis, qui accusamus? Officia, est!</p>
+            <p>We plan, build, buy, and sell from all across Europe. It is a continent with a thousand faces, and we aim
+                to show you a home for every of those faces. Whether it is the sunlit lands of Italy, the finnish north
+                lit by the Northern Lights, or the beaches of the French Riviera, we'll make sure to find a home that
+                suits your expectations.</p>
         </div>
         <span class="leading-line-third"></span>
         <div #hiddenElement class="hidden content-box-3" appIntersectionObserver>

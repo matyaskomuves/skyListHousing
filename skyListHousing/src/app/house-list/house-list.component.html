@@ -4,7 +4,8 @@
     <div *ngFor="let house of houses" class="listing-card">
         <img [src]="house.image" alt="house">
         <h3>{{house.name}}</h3>
-        <h4>{{house.price | currency}}</h4>
+        <p>{{house.location}}</p>
+        <h4>{{house.price}} EUR</h4>
         <p>{{house.description}}</p>
 
     </div>

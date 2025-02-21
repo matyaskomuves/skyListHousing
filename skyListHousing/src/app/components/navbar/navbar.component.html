@@ -4,8 +4,15 @@
                 apartment
             </span>skyHousing</a>
     </div>
-    <ul class="nav-links">
-        <li><a href="/">Home</a></li>
+
+    <div><button class="menu-toggle" (click)="toggleMenu()"><i class="material-icons">menu</i></button>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <ul class="nav-links" [ngClass]="{'active': isMenuOpen }">
+        <li><a href=" /">Home</a></li>
         <li><a href="/house-list">House Listings</a></li>
         <li><a href="/contact">Contact</a></li>
     </ul>

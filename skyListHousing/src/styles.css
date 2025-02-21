@@ -133,7 +133,39 @@ p {
 
 @media (max-width: 767px) {
     .listing-card {
-        width: 80%;
+        &:hover {
+            border-top-left-radius: 1rem;
+            cursor: pointer;
+            background-color: var(--accent-color);
+            opacity: 1;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+    .listing-card p {
+        font-size: 0.9rem;
+    }
+
+    .listing-card img {
+        width: 100%;
         height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-top-left-radius: 10px;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .wrapper {
+        padding: 10px;
     }
 }
