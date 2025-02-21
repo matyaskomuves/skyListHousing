@@ -9,6 +9,61 @@
     gap: 20px;
 }
 
+.filter-container {
+    width: 100vw;
+    height: fit-content;
+}
+
+.button-container {
+    margin-top: 0.5rem;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    transition: background-color 0.3s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 50%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+form select {
+    width: 30%;
+    padding: 0.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+
 /* media queries */
 
 @media (max-width: 768px) {

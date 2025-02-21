@@ -1,7 +1,30 @@
 <h1>Current Offers</h1>
 <h2>Browse through our catalog</h2>
+<div class="button-container"><button (click)="toggleFilters()" class="toggle-btn">{{ showFilters ? 'Hide Filters' :
+        'Show Filters' }}</button></div>
+<div class="filter-container" *ngIf="showFilters" @fadeInOut>
+    <form [formGroup]="filterForm" class="filter-form">
+        <input formControlName="location" type="text" placeholder="Your desired location (country)">
+        <input formControlName="minPrice" type="number" placeholder="minimum price">
+        <input formControlName="maxPrice" type="number" placeholder="maximum price">
+        <select formControlName="bedrooms">
+            <option value="">Any number of bedrooms</option>
+            <option value="1">1 bedroom</option>
+            <option value="2">2 bedrooms</option>
+            <option value="3">3 bedrooms</option>
+            <option value="4">4 bedrooms</option>
+        </select>
+        <select formControlName="bathrooms">
+            <option value="">Any number of bathrooms</option>
+            <option value="1">1 bathroom</option>
+            <option value="2">2 bathrooms</option>
+            <option value="3">3 bathrooms</option>
+            <option value="4">4 bathrooms</option>
+        </select>
+    </form>
+</div>
 <div class="listings-container">
-    <div *ngFor="let house of houses" class="listing-card">
+    <div *ngFor="let house of filteredHouses" class="listing-card">
         <img [src]="house.image" alt="house">
         <h3>{{house.name}}</h3>
         <p>{{house.location}}</p>
