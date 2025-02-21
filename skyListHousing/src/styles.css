@@ -12,7 +12,9 @@ html {
 }
 
 body {
-    background: url('/oliver-hae-h3pU3m-Eduk-unsplash.jpg');
+    background: url('/main-bg.jpg');
+    background-color: gray;
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +34,7 @@ h1 {
     font-size: 4.75rem;
     letter-spacing: 3px;
     font-weight: 100;
-    margin-top: 0 !important;
+    margin-top: 5px !important;
     margin-bottom: 1.25rem;
     animation: fadeInTop 1s forwards ease;
 }

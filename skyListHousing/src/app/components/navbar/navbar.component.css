@@ -5,14 +5,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-color);
-    opacity: 0.6;
     padding: 15px 20px;
     color: inherit;
     transition: opacity 0.5s ease-in;
-}
-
-.navbar:hover {
-    opacity: 1;
 }
 
 .logo a {
