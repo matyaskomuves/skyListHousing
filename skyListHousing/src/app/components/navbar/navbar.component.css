@@ -47,15 +47,13 @@
     color: inherit;
     font-size: 1rem;
     transition: color 0.3s;
-    transition: all 0.7s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--accent-color);
     font-size: 1.15rem;
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
     padding: 10px;
 }
 

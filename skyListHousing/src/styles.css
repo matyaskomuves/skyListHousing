@@ -54,21 +54,19 @@ p {
 }
 
 .btn {
-    padding: 5px 10px;
+    cursor: pointer;
+    padding: 10px 20px;
     font-size: 0.9rem;
     border: none;
-    background-color: var(--background-color);
+    border-radius: 5px;
+    background-color: var(--accent-color);
     color: var(--font-color);
     transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
         scale: 1.1;
-        border-radius: 5px;
-        background-color: var(--accent-color);
-        color: var(--background-color);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 1rem;
+        cursor: pointer;
     }
 }
 

@@ -1,6 +1,6 @@
 <h1>Current Offers</h1>
 <h2>Browse through our catalog</h2>
-<div class="button-container"><button (click)="toggleFilters()" class="toggle-btn">{{ showFilters ? 'Hide Filters' :
+<div class="button-container"><button (click)="toggleFilters()" class="btn">{{ showFilters ? 'Hide Filters' :
         'Show Filters' }}</button></div>
 <div class="filter-container" *ngIf="showFilters" @fadeInOut>
     <form [formGroup]="filterForm" class="filter-form">
