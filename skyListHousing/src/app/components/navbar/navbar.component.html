@@ -11,7 +11,7 @@
         <div></div>
     </div>
 
-    <ul class="nav-links" [ngClass]="{'active': isMenuOpen }">
+    <ul class="nav-links" [ngClass]="{'active': isMenuOpen}" [@fadeInOut] *ngIf="isMenuOpen || isDesktop">
         <li><a href=" /">Home</a></li>
         <li><a href="/house-list">House Listings</a></li>
         <li><a href="/contact">Contact</a></li>

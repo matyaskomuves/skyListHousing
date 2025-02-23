@@ -71,7 +71,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 0;
         background-color: var(--background-color);
         width: 100%;
