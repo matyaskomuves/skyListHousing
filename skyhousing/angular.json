@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "skyListHousing": {
+    "skyhousing": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "skyListHousing:build:production"
+              "buildTarget": "skyhousing:build:production"
             },
             "development": {
-              "buildTarget": "skyListHousing:build:development"
+              "buildTarget": "skyhousing:build:development"
             }
           },
           "defaultConfiguration": "development"

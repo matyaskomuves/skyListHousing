@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "projectskyhousing"
+  },
+  "hosting": {
+    "public": "dist/sky-list-housing",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:skyListHousing": "node dist/sky-list-housing/server/server.mjs"
+    "serve:ssr:skyhousing": "node dist/sky-list-housing/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "@angular/common": "^19.0.0",
     "@angular/compiler": "^19.0.0",
     "@angular/core": "^19.0.0",
+    "@angular/fire": "^19.0.0",
     "@angular/forms": "^19.0.0",
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
