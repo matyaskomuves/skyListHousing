@@ -38,7 +38,7 @@ export class HouseListComponent {
       name: 'A french home with mix of traditional wood and modern solutions',
       location: 'France',
       price: 300000,
-      description: 'This is a placeholder for further description :) This is a placeholder for further description :)',
+      description: 'A charming French home blending classic wooden elements with sleek modern design.',
       bedrooms: 4,
       bathrooms: 2,
     },
@@ -48,7 +48,7 @@ export class HouseListComponent {
       name: 'Lovely, modern take on a cottage on the French countryside',
       location: 'France',
       price: 220000,
-      description: 'This is a placeholder for further description :)This is a placeholder for further description :)',
+      description: 'A cozy yet stylish cottage offering a contemporary touch to the French countryside.',
       bedrooms: 2,
       bathrooms: 1
     },
@@ -58,7 +58,7 @@ export class HouseListComponent {
       name: 'Spacious family home with an equally spacious yard',
       location: 'Netherlands',
       price: 280000,
-      description: 'This is a placeholder for further description :)This is a placeholder for further description :)',
+      description: 'A spacious family retreat with a generous yard, perfect for comfort and gatherings.',
       bedrooms: 4,
       bathrooms: 2
     },
@@ -68,7 +68,7 @@ export class HouseListComponent {
       name: 'Two-story elegance, nested in the heart of Finland',
       location: 'Finland',
       price: 350000,
-      description: 'This is a placeholder for further description :)This is a placeholder for further description :)',
+      description: 'A sophisticated two-story home in the heart of Finland, combining elegance and warmth.',
       bedrooms: 5,
       bathrooms: 3
     },
