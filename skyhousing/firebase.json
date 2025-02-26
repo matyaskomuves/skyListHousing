@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/sky-list-housing",
+    "public": "dist/sky-list-housing/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
