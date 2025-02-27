@@ -23,7 +23,7 @@
 
             <div>
                 <label for="message" id="message">Type your message:</label>
-                <textarea id="message" formControlName="message" rows="5" cols="50" (resize)="null" required></textarea>
+                <textarea id="message" formControlName="message" rows="5" cols="35" (resize)="null" required></textarea>
                 <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
                     <p class="muted">
                         A message of
