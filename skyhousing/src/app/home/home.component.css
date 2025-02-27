@@ -49,16 +49,9 @@ span.material-icons {
     min-height: 300px;
     height: fit-content;
     padding: 1.5rem;
-    opacity: 0;
     transition: opacity 2.5s ease-in-out 0.3s;
 }
 
-.content-box-1.visible,
-.content-box-2.visible,
-.content-box-3.visible,
-.content-box-4.visible {
-    opacity: 1;
-}
 
 .team-container {
     gap: 10px;
@@ -92,7 +85,7 @@ span.material-icons {
 }
 
 .leading-line-first {
-    height: 100vh;
+    height: 50vh;
 }
 
 .leading-line-second,

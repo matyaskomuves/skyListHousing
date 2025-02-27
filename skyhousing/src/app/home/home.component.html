@@ -13,9 +13,9 @@
         <h2>Your next home is just over the horizon</h2>
         <span class="material-icons">arrow_downward</span>
         <span class="leading-line-first"></span>
-        <div #hiddenElement class="hidden content-box-1" appIntersectionObserver>
-            <h1>We Are skyHousing</h1>
-            <div class="team-container">
+        <div class="content-box-1">
+            <h1 #hiddenElement appIntersectionObserver class="hidden">We Are skyHousing</h1>
+            <div #hiddenElement appIntersectionObserver class="team-container hidden">
                 <div *ngFor="let teammember of teamMembers" class="team-member-card">
                     <img [src]="teammember.image" alt="team member" draggable="false">
                     <h3>{{teammember.name}}</h3>

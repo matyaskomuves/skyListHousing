@@ -79,13 +79,13 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       const viewportHeight = window.innerHeight;
       const elementTop = entry.getBoundingClientRect().top;
       //Dynamic Threshold logic.
-      if (elementTop < viewportHeight * 0.25) {
-        return 0.65;
+      if (elementTop < viewportHeight * 0.5) {
+        return 0.75;
       } else {
-        return 0.5;
+        return 0.66;
       }
     } else {
-      return 0.5;
+      return 0.66;
     }
   }
 
