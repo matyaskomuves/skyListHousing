@@ -24,6 +24,10 @@ a {
     width: 100vw;
 }
 
+.leading-headline {
+    margin-top: 5rem;
+}
+
 span.material-icons {
     font-size: 4.5rem;
     color: inherit;
@@ -32,7 +36,8 @@ span.material-icons {
 
 .content-box-1,
 .content-box-2,
-.content-box-3 {
+.content-box-3,
+.content-box-4 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -40,12 +45,19 @@ span.material-icons {
     align-items: center;
     border-top-left-radius: 1rem;
     background-color: var(--background-color);
-    opacity: 0.8;
     width: 80vw;
+    min-height: 300px;
     height: fit-content;
     padding: 1.5rem;
-    border: 1px solid var(--accent-color);
-    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out 0.3s;
+}
+
+.content-box-1.visible,
+.content-box-2.visible,
+.content-box-3.visible,
+.content-box-4.visible {
+    opacity: 1;
 }
 
 .team-container {
@@ -75,9 +87,8 @@ span.material-icons {
 .leading-line-first,
 .leading-line-second,
 .leading-line-third {
-    width: 3px;
-    border-radius: 3px;
-    background-color: var(--accent-color);
+    width: 5px;
+    background-color: var(--background-color);
 }
 
 .leading-line-first {
@@ -86,7 +97,7 @@ span.material-icons {
 
 .leading-line-second,
 .leading-line-third {
-    height: 25vh;
+    height: 20vh;
 }
 
 /* Intersection Observer */
@@ -146,7 +157,8 @@ span.material-icons {
 
     .content-box-1,
     .content-box-2,
-    .content-box-3 {
+    .content-box-3,
+    .content-box-4 {
         padding: 10px 20px;
         width: 100%;
     }

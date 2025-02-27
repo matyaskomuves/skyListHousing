@@ -1,0 +1,103 @@
+[debug] [2025-02-26T14:35:10.273Z] ----------------------------------------------------------------------
+[debug] [2025-02-26T14:35:10.278Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2025-02-26T14:35:10.278Z] CLI Version:   13.31.2
+[debug] [2025-02-26T14:35:10.279Z] Platform:      darwin
+[debug] [2025-02-26T14:35:10.279Z] Node Version:  v22.12.0
+[debug] [2025-02-26T14:35:10.279Z] Time:          Wed Feb 26 2025 15:35:10 GMT+0100 (Central European Standard Time)
+[debug] [2025-02-26T14:35:10.279Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-26T14:35:10.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-26T14:35:10.368Z] > authorizing via signed-in user (mkomuves714@gmail.com)
+[debug] [2025-02-26T14:35:10.368Z] [iam] checking project projectskyhousing for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-26T14:35:10.368Z] Checked if tokens are valid: false, expires at: 1740521642921
+[debug] [2025-02-26T14:35:10.368Z] Checked if tokens are valid: false, expires at: 1740521642921
+[debug] [2025-02-26T14:35:10.368Z] > refreshing access token with scopes: []
+[debug] [2025-02-26T14:35:10.369Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-26T14:35:10.369Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-26T14:35:10.965Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-26T14:35:10.965Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-26T14:35:10.975Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions [none]
+[debug] [2025-02-26T14:35:10.975Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions x-goog-quota-user=projects/projectskyhousing
+[debug] [2025-02-26T14:35:10.975Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-26T14:35:11.868Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions 200
+[debug] [2025-02-26T14:35:11.869Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-26T14:35:11.869Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:11.869Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:11.869Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/projectskyhousing [none]
+[debug] [2025-02-26T14:35:12.449Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/projectskyhousing 200
+[debug] [2025-02-26T14:35:12.449Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/projectskyhousing {"projectId":"projectskyhousing","projectNumber":"607036298333","displayName":"projectskyhousing","name":"projects/projectskyhousing","resources":{"hostingSite":"projectskyhousing"},"state":"ACTIVE","etag":"1_c5ae0e07-67aa-4737-8cb0-87d97f462d3f"}
+[info] 
+[info] === Deploying to 'projectskyhousing'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-02-26T14:35:12.454Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:12.454Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:12.454Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/projectskyhousing/versions [none]
+[debug] [2025-02-26T14:35:12.454Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/projectskyhousing/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-02-26T14:35:14.285Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/projectskyhousing/versions 200
+[debug] [2025-02-26T14:35:14.285Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/projectskyhousing/versions {"name":"projects/607036298333/sites/projectskyhousing/versions/5c66c7c07c3d77e0","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[projectskyhousing]: beginning deploy... 
+[info] i  hosting[projectskyhousing]: found 38 files in dist/sky-list-housing 
+[debug] [2025-02-26T14:35:14.300Z] [hosting] uploading with 200 concurrency
+[debug] [2025-02-26T14:35:14.370Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.370Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.371Z] [hosting] hash cache [ZGlzdC9za3ktbGlzdC1ob3VzaW5n] stored for 38 files
+[debug] [2025-02-26T14:35:14.371Z] [hosting][hash queue][FINAL] {"max":66,"min":9,"avg":19.894736842105264,"active":0,"complete":38,"success":38,"errored":0,"retried":0,"total":38,"elapsed":69}
+[debug] [2025-02-26T14:35:14.371Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/607036298333/sites/projectskyhousing/versions/5c66c7c07c3d77e0:populateFiles [none]
+[debug] [2025-02-26T14:35:14.371Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/607036298333/sites/projectskyhousing/versions/5c66c7c07c3d77e0:populateFiles {"files":{"/server/chunk-X2SEQXRR.mjs":"f98437ea04fe407c79feea46fc04b5efd676bdb478d71e35b705fd61648488e0","/server/chunk-TNO4MGIL.mjs":"a1068e5195a594d383627901b18bcc1f9925ba2196d47e7c3ac9d94d1a009ea6","/server/chunk-GFUZYSQG.mjs":"ee778808d3fa85c84597d2edb2d85470ae09f08c930d98346c264c376dd5449d","/server/angular-app-engine-manifest.mjs":"c5c026f5fbfc3699b1fe4669bc5fe5eed5617837752265e6362d8275de3b19eb","/server/chunk-EJSJJTUO.mjs":"7f3f15d97799e2277572cfca693b135b9697b7e78182762557180657228e042b","/server/angular-app-manifest.mjs":"b0373f9f4afc4764322dfd7fd05c362cc9dd9705189fe8ae133e489020ed32f4","/server/assets-chunks/styles-XN4IPTGG_css.mjs":"1a7da53deaab9e95245b7d06bf920dd7c7e5e3ce6930f0548f943c6199c2b45f","/server/assets-chunks/index_server_html.mjs":"b668ea239ff06524516d80842dfcd603599d07de5f0ba5e5eaa50d3432491bc1","/server/assets-chunks/contact_index_html.mjs":"38b27f1b9386d5bb36e33e5094776408140ff864e89b6473241a1e4685f5738a","/prerendered-routes.json":"c385351ad40ed1605ad9d5493dec4962de2a126f032cbaccfb2d09b6c77bdd9a","/server/assets-chunks/index_csr_html.mjs":"ee9c5475f905ea02b67492809bd1fb8c4927881745aa75ff27a132849748638c","/server/assets-chunks/home_index_html.mjs":"26bcf53167f7c5383503efecc2614f4f893593fc059b75c3474f10126c72f82d","/browser/styles-XN4IPTGG.css":"90552590c80886a116656537308751e0e77b7e9d440e11141b923eb5d0c12dc5","/server/index.server.html":"be7968f73a67d236b27cb0ebe7c2fc14e9a57d79d9ccdc1d4b6b3acdb4c9f332","/server/assets-chunks/house-list_index_html.mjs":"cd85e45bf3ae25f0c73b50db6dcb6362622b18ce9b2592e92f46662bbe5f4c31","/browser/polyfills-FFHMD2TL.js":"02522c25699ab93e99a93914c3fc1158c874090dc123472be90c6746e6cf2d13","/browser/house-list/index.html":"372f338039b73e87ba64fdbd6a3b163a37b4c3a5bc80025ff215e1c108bd14c2","/browser/index.csr.html":"af2782b1987393051dda29b405601fd0905103f506e258b98286057fc069ec0f","/browser/home/index.html":"5e6cfdd1d33f6c0208b683de686966a21928e911dbc29be534c0ca81bbf33bf7","/browser/contact/index.html":"c69bc68ed5c857831f935524f8b78198810d24353a36cd2fd7c4d2840362d741","/browser/favicon.ico":"8f1fc0f94ae643bb8757c3cb49f69bf6cb2228f632cb77c7e47d8ee3995d88a7","/3rdpartylicenses.txt":"454a8ed8c76f6280194ce62796e2a03b0ae1c0541d956c687e7da58d5fc77b63","/browser/john-doe.jpg":"f961c69c5e3c8f46a4dba8569826b2d1839947e14a46e60ae69eda6ed697a6c6","/browser/alice-johnson.jpg":"34e64b750679c66220fe5636f2bc59387ce30c8d96e33b0d4ad9fa093e92bd4d","/browser/bob-brown.jpg":"25dd547902f95441024e59a68a61a4b309aa4d1d2e2b9095f48fc536404c8cad","/browser/charles-wilson.jpg":"40eba5ec25541e5adbd10cdcbde72213627730690c74815ed2ac03fd95a51574","/browser/jane-doe.jpg":"6d9d2094b3fe0694ee89308f03cfdeee59f0a707ee334d084d7d54c62d2f2d1e","/server/polyfills.server.mjs":"55265d1cba198f3791bbe2ff2de1a655a71b248bf4f7bf82bdba9d6c372d5c07","/browser/main-JX576TUJ.js":"c4d96354784af3bbfcb970c41304a9947be31cecc0e4502b0b6784d4f2c5fef0","/browser/r-architecture-KQPEhYweLrQ-unsplash.jpg":"1154c985688bf3170de051bce040c5ab6e0cbe4ea96c48d3eeee840d9035b1b5","/browser/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg":"3504bca5e7344ce1c01c9e8986833d4713603c20f63bbbd8aef260ce022101c2","/browser/vu-anh-TiVPTYCG_3E-unsplash.jpg":"6ff6044747bd7a2585c9190e0fb25aa617755acaf0e5ea837205f6616a8961df","/browser/oliver-hae-h3pU3m-Eduk-unsplash.jpg":"cdb1f7b48067292803049399271fe8526ce2b6b981c662a8c513e3e38e347190","/browser/webaliser-_TPTXZd9mOo-unsplash.jpg":"0946d74315f784b6d4e2a36ef100243241ddf582d742497854b25ab9d457cb98","/server/main.server.mjs":"a154879d0d3c8aa6fac1303392c388e9638f2f4e2cd63102cc1c077c25b7ef93","/browser/sieuwert-otterloo-aren8nutd1Q-unsplash.jpg":"5a9fcbe89eba537df3747778ae2f5025de5310aec1c5a37c0fe04f0587f3e665","/server/server.mjs":"3e409f0b1b6e7c16c689dfe749333185da5450e097e9b14119392d358f6193fc","/browser/main-bg.jpg":"7fb60cb2df125ee6cb348f83157ad8e079ef009e195acf6370dfac495e75924f"}}
+[debug] [2025-02-26T14:35:14.917Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/607036298333/sites/projectskyhousing/versions/5c66c7c07c3d77e0:populateFiles 200
+[debug] [2025-02-26T14:35:14.917Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/607036298333/sites/projectskyhousing/versions/5c66c7c07c3d77e0:populateFiles {"uploadRequiredHashes":["372f338039b73e87ba64fdbd6a3b163a37b4c3a5bc80025ff215e1c108bd14c2","5e6cfdd1d33f6c0208b683de686966a21928e911dbc29be534c0ca81bbf33bf7","c69bc68ed5c857831f935524f8b78198810d24353a36cd2fd7c4d2840362d741","b0373f9f4afc4764322dfd7fd05c362cc9dd9705189fe8ae133e489020ed32f4","b668ea239ff06524516d80842dfcd603599d07de5f0ba5e5eaa50d3432491bc1","af2782b1987393051dda29b405601fd0905103f506e258b98286057fc069ec0f","38b27f1b9386d5bb36e33e5094776408140ff864e89b6473241a1e4685f5738a","a154879d0d3c8aa6fac1303392c388e9638f2f4e2cd63102cc1c077c25b7ef93","be7968f73a67d236b27cb0ebe7c2fc14e9a57d79d9ccdc1d4b6b3acdb4c9f332","26bcf53167f7c5383503efecc2614f4f893593fc059b75c3474f10126c72f82d","c4d96354784af3bbfcb970c41304a9947be31cecc0e4502b0b6784d4f2c5fef0","ee9c5475f905ea02b67492809bd1fb8c4927881745aa75ff27a132849748638c","cd85e45bf3ae25f0c73b50db6dcb6362622b18ce9b2592e92f46662bbe5f4c31"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files"}
+[debug] [2025-02-26T14:35:14.918Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.918Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.918Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.918Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.918Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.918Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.919Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.920Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.921Z] Checked if tokens are valid: true, expires at: 1740584109966
+[debug] [2025-02-26T14:35:14.921Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/372f338039b73e87ba64fdbd6a3b163a37b4c3a5bc80025ff215e1c108bd14c2 [none]
+[debug] [2025-02-26T14:35:14.921Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/372f338039b73e87ba64fdbd6a3b163a37b4c3a5bc80025ff215e1c108bd14c2 [stream]
+[debug] [2025-02-26T14:35:14.923Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/5e6cfdd1d33f6c0208b683de686966a21928e911dbc29be534c0ca81bbf33bf7 [none]
+[debug] [2025-02-26T14:35:14.923Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/5e6cfdd1d33f6c0208b683de686966a21928e911dbc29be534c0ca81bbf33bf7 [stream]
+[debug] [2025-02-26T14:35:14.925Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/c69bc68ed5c857831f935524f8b78198810d24353a36cd2fd7c4d2840362d741 [none]
+[debug] [2025-02-26T14:35:14.925Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/c69bc68ed5c857831f935524f8b78198810d24353a36cd2fd7c4d2840362d741 [stream]
+[debug] [2025-02-26T14:35:14.925Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/b0373f9f4afc4764322dfd7fd05c362cc9dd9705189fe8ae133e489020ed32f4 [none]
+[debug] [2025-02-26T14:35:14.925Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/b0373f9f4afc4764322dfd7fd05c362cc9dd9705189fe8ae133e489020ed32f4 [stream]
+[debug] [2025-02-26T14:35:14.926Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/b668ea239ff06524516d80842dfcd603599d07de5f0ba5e5eaa50d3432491bc1 [none]
+[debug] [2025-02-26T14:35:14.926Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/b668ea239ff06524516d80842dfcd603599d07de5f0ba5e5eaa50d3432491bc1 [stream]
+[debug] [2025-02-26T14:35:14.927Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/af2782b1987393051dda29b405601fd0905103f506e258b98286057fc069ec0f [none]
+[debug] [2025-02-26T14:35:14.927Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/af2782b1987393051dda29b405601fd0905103f506e258b98286057fc069ec0f [stream]
+[debug] [2025-02-26T14:35:14.927Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/38b27f1b9386d5bb36e33e5094776408140ff864e89b6473241a1e4685f5738a [none]
+[debug] [2025-02-26T14:35:14.927Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/38b27f1b9386d5bb36e33e5094776408140ff864e89b6473241a1e4685f5738a [stream]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/a154879d0d3c8aa6fac1303392c388e9638f2f4e2cd63102cc1c077c25b7ef93 [none]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/a154879d0d3c8aa6fac1303392c388e9638f2f4e2cd63102cc1c077c25b7ef93 [stream]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/be7968f73a67d236b27cb0ebe7c2fc14e9a57d79d9ccdc1d4b6b3acdb4c9f332 [none]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/be7968f73a67d236b27cb0ebe7c2fc14e9a57d79d9ccdc1d4b6b3acdb4c9f332 [stream]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/26bcf53167f7c5383503efecc2614f4f893593fc059b75c3474f10126c72f82d [none]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/26bcf53167f7c5383503efecc2614f4f893593fc059b75c3474f10126c72f82d [stream]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/c4d96354784af3bbfcb970c41304a9947be31cecc0e4502b0b6784d4f2c5fef0 [none]
+[debug] [2025-02-26T14:35:14.928Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/c4d96354784af3bbfcb970c41304a9947be31cecc0e4502b0b6784d4f2c5fef0 [stream]
+[debug] [2025-02-26T14:35:14.929Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/ee9c5475f905ea02b67492809bd1fb8c4927881745aa75ff27a132849748638c [none]
+[debug] [2025-02-26T14:35:14.929Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/ee9c5475f905ea02b67492809bd1fb8c4927881745aa75ff27a132849748638c [stream]
+[debug] [2025-02-26T14:35:14.929Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/cd85e45bf3ae25f0c73b50db6dcb6362622b18ce9b2592e92f46662bbe5f4c31 [none]
+[debug] [2025-02-26T14:35:14.929Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projectskyhousing/versions/5c66c7c07c3d77e0/files/cd85e45bf3ae25f0c73b50db6dcb6362622b18ce9b2592e92f46662bbe5f4c31 [stream]
+[debug] [2025-02-26T14:35:14.929Z] [hosting][populate queue][FINAL] {"max":551,"min":551,"avg":551,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":559}
+[debug] [2025-02-26T14:35:14.929Z] [hosting] uploads queued: 13

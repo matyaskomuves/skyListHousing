@@ -1,0 +1,16 @@
+[debug] [2025-02-26T19:07:19.468Z] ----------------------------------------------------------------------
+[debug] [2025-02-26T19:07:19.473Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2025-02-26T19:07:19.473Z] CLI Version:   13.31.2
+[debug] [2025-02-26T19:07:19.473Z] Platform:      darwin
+[debug] [2025-02-26T19:07:19.473Z] Node Version:  v22.12.0
+[debug] [2025-02-26T19:07:19.474Z] Time:          Wed Feb 26 2025 20:07:19 GMT+0100 (Central European Standard Time)
+[debug] [2025-02-26T19:07:19.474Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-26T19:07:19.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-26T19:07:19.564Z] > authorizing via signed-in user (mkomuves714@gmail.com)
+[debug] [2025-02-26T19:07:19.564Z] [iam] checking project projectskyhousing for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-26T19:07:19.564Z] Checked if tokens are valid: true, expires at: 1740599091072
+[debug] [2025-02-26T19:07:19.564Z] Checked if tokens are valid: true, expires at: 1740599091072
+[debug] [2025-02-26T19:07:19.565Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions [none]
+[debug] [2025-02-26T19:07:19.565Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions x-goog-quota-user=projects/projectskyhousing
+[debug] [2025-02-26T19:07:19.565Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/projectskyhousing:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}

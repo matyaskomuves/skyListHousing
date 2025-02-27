@@ -51,7 +51,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       }
 
       this.observer = new IntersectionObserver(
-        (entries) => {
+        (entries: IntersectionObserverEntry[]) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add('visible');
@@ -60,17 +60,32 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
           });
         },
         {
-          rootMargin: '0px 0px -50px 0px',
-          threshold: 0.5
+          threshold: this.calculateThreshold(),
         }
       );
 
       setTimeout(() => {
         this.hiddenElements.forEach((element) => this.observer!.observe(element.nativeElement));
-      }, 500);
+      }, 1200);
     } else {
       console.warn('IntersectionObserver not supported. Using fallback.');
       this.hiddenElements.forEach((element) => element.nativeElement.classList.add('visible'));
+    }
+  }
+
+  private calculateThreshold(): number {
+    if (this.hiddenElements && this.hiddenElements.length > 0) {
+      const entry = this.hiddenElements.first.nativeElement;
+      const viewportHeight = window.innerHeight;
+      const elementTop = entry.getBoundingClientRect().top;
+      //Dynamic Threshold logic.
+      if (elementTop < viewportHeight * 0.25) {
+        return 0.65;
+      } else {
+        return 0.5;
+      }
+    } else {
+      return 0.5;
     }
   }
 
